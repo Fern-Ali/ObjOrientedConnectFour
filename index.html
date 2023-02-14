@@ -1,0 +1,51 @@
+<!doctype html>
+<head>
+    <title>Connect 4</title>
+    <link href="connect4.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+
+
+    <div class="container" id="start">
+        <div class="row">
+            <div class="col-12">
+                <div id="title">
+                    <h1></h1>
+                    <p class="one"></p>
+                    <p class="two">CONNECT FOUR</p>
+                    <p class="three"></p>
+                    <input id="p1-color" placeholder="Player 1 color">
+                    <input id="p2-color" placeholder="Player 2 color">
+                    <button id="start-game" class="btn btn-primary btn-block btn-lg pt-4 pb-4">Start!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 offset-sm-3 col-12 mt-4 mb-4">
+                <!--<h2>Best Score: <span id="best-score">&mdash;</span></h2>-->
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-4 offset-4">
+                
+                <a href="index.html" id="restart-button" class="btn btn-primary btn-lg p-4">Play again?</a>
+            </div>
+        </div>
+    </div>
+
+
+<div id="game">
+  <table id="board" class="boardDecoration"></table>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
