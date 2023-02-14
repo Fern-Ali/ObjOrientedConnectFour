@@ -1,0 +1,206 @@
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/*.piece.p1 {
+  background-color: red;
+}
+
+.piece.p2 {
+  background-color: blue;
+}*/
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 3px lightgray;
+}
+
+/*#column-top td:hover {
+  background-color: gold;
+}*/
+h1 {
+    /*color: rgba(227, 171, 204, 0.39);*/
+    color: pink;
+    text-align: center;
+    font-size: 3em;
+    /*background-color: rgba(208, 208, 208, 0.39);*/
+    display: none;
+}
+
+#game {
+    position: relative;
+    top: 500px;
+
+    /*width: 50vw;
+    height: 80vh;*/
+}
+
+
+#board td {
+    width: 100px;
+    height: 100px;
+}
+
+.boardDecoration td {
+    border: solid 6px rgba(185, 168, 174, 65%);
+}
+
+.boardDecoration {
+    background-color: rgba(0, 0, 0, 0.62);
+}
+
+table {
+    position: relative;
+    /*left: 300px;*/
+    margin: auto;
+}
+
+.myTopCells {
+    /*background-color: rgba(185, 168, 174, 45%);*/
+    background-color: rgba(242, 131, 188, 0.4);
+    font-weight: 800;
+    border-radius: 100px;
+    border: solid 5px #666;
+    border-style: dotted;
+}
+
+    .myTopCells:hover {
+        background-color: rgba(242, 131, 188, 0.75);
+        cursor: pointer;
+        color: rgba(35, 30, 33, 0.79);
+        border-radius: 100px;
+        border: dotted 7px white;
+        text-align: center;
+    }
+
+#start-game {
+    border: inset;
+    position: relative;
+    top: -15px;
+    left: 235px;
+    /*background-color: rgba(185, 168, 174, 45%);*/
+    background-color: pink;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    width: 145px;
+}
+
+    #start-game:hover {
+        background-color: hotpink;
+        cursor: pointer;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        font-weight: normal;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        /*border: solid 3px black;*/
+    }
+
+#start {
+    height: 550px;
+    font-family: 'Bungee', cursive;
+    color: rgba(139, 94, 210, 0.92);
+    color: deeppink;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 95px;
+    
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    text-shadow: -2px 0 white, 0 2px white, 3px 0 white, 0 -2px white;
+    width: 650px;
+    top: 0px;
+}
+
+.button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    /*display: inline-block;*/
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 auto;
+    position: center;
+}
+
+#restart-button {
+    position: fixed;
+    bottom: 840px;
+    left: 850px;
+    border: inset;
+    background-color: pink;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+    
+    visibility: hidden;
+}
+
+    #restart-button:hover {
+        background-color: rgba(185, 168, 174, 45%);
+        cursor: pointer;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        font-weight: normal;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    }
+
+#title {
+    background-color: rgba(230, 15, 201, 0.24);
+    /*height: 60vh;*/
+    position: relative;
+    top: 70px;
+    left: 0px;
+    /*width: 30vw;*/
+    border: inset;
+}
+
+    #title:hover {
+        background-color: rgba(230, 15, 201, 0.3);
+        cursor: pointer;
+    }
+
+p {
+    font-size: 5em;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    bottom: 0px;
+    position: relative;
+}
+
+#p1-color {
+    position: relative;
+    left: 30px;
+    text-align: center;
+}
+
+#p2-color {
+    position: relative;
+    left: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#start.playing {
+    margin-top: -90vh;
+    transition: margin-top 1s;
+}
